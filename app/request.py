@@ -78,6 +78,7 @@ def get_movie(id):
             movie_object = Movie(id,title,overview,poster,vote_average,vote_count)
 
     return movie_object
+    
 
 def search_movie(movie_name):
     search_movie_url = 'https://api.themoviedb.org/3/search/movie?api_key={}&query={}'.format(api_key, movie_name)
